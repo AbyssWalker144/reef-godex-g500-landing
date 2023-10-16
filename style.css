@@ -269,6 +269,38 @@ h2 {
   position: absolute;
   bottom: 0px;
 }
+.complectations .complectations-wrapper .card .button {
+  font-size: 28px;
+  color: white;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 360px;
+  height: 68px;
+  border-radius: 8px;
+  background: linear-gradient(270deg, #F0566D 0%, #E21937 51.04%, #DE7383 100%);
+  box-shadow: 0px 0px 10px 3px rgba(249, 10, 10, 0.25);
+  margin-top: 40px;
+  align-self: center;
+  cursor: pointer;
+  gap: 30px;
+}
+.complectations .complectations-wrapper .card .button .arrow {
+  width: 20px;
+  height: 20px;
+  border: solid rgb(255, 255, 255);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg) translateX(0);
+  position: relative;
+  stroke-linecap: round;
+  transition: transform 0.3s ease;
+}
+.complectations .complectations-wrapper .card .button:hover .arrow {
+  transform: rotate(-45deg) translate(7px, 7px);
+}
 
 .warranty {
   margin-top: 100px;
