@@ -362,42 +362,39 @@ h2 {
                 margin-top: 40px;
                 align-self: center;
                 cursor: pointer;
-                gap: 30px; 
+                gap: 30px;
+                transition: width 0.3s ease-out;
+                // background-size: 200% 200%;
 
-                .arrow {
-                    width: 20px;
-                    height: 20px;
-                    border: solid rgb(255, 255, 255);
-                    border-width: 0 3px 3px 0;
-                    display: inline-block;
-                    padding: 3px;
-                    transform: rotate(-45deg) translateX(0);
+                .arrow-wrapper{
+                    display: flex;
                     position: relative;
-                    stroke-linecap: round;
-                    transition: transform 0.3s ease;
 
-                    // &::after {
-                    //     content: '';
-                    //     width: 11px;
-                    //     height: 11px;
-                    //     border: solid rgb(255, 255, 255);
-                    //     border-width: 0 3px 3px 0;
-                    //     display: inline-block;
-                    //     padding: 3px;
-                    //     position: absolute;
-                    //     transform: translate(6px, 7px);
-                    // }
-                    // &::before {
-                    //     content: '';
-                    //     width: 11px;
-                    //     height: 11px;
-                    //     border: solid rgb(255, 255, 255);
-                    //     border-width: 0 3px 3px 0;
-                    //     display: inline-block;
-                    //     padding: 3px;
-                    //     position: absolute;
-                    //     transform: translate(16px, 17px);
-                    // }
+                    .arrow {
+                        width: 20px;
+                        height: 20px;
+                        border: solid rgb(255, 255, 255);
+                        border-width: 0 3px 3px 0;
+                        // display: inline-block;
+                        // padding: 3px;
+                        transform: rotate(-45deg) translateX(0);
+                        // stroke-linecap: round;
+                        transition: transform 0.3s ease-out;
+                    }
+                    :nth-child(2){
+                        margin-left: -6px;
+                        transition-delay: 0.1s;
+                        
+                    }
+                    :nth-child(3){
+                        margin-left: -6.5px;
+                        transition-delay: 0.2s;
+                    }
+                }
+
+                &:hover{                    
+                    width: 380px; 
+
                 }
 
                 &:hover .arrow{
@@ -658,6 +655,13 @@ h2 {
 
                     .line {
                         height: 6px;
+                    }
+                }
+
+                .button{
+                    
+                    &:first-child{
+                        margin-bottom: 60px;
                     }
                 }
             }

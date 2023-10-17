@@ -285,18 +285,30 @@ h2 {
   align-self: center;
   cursor: pointer;
   gap: 30px;
+  transition: width 0.3s ease-out;
 }
-.complectations .complectations-wrapper .card .button .arrow {
+.complectations .complectations-wrapper .card .button .arrow-wrapper {
+  display: flex;
+  position: relative;
+}
+.complectations .complectations-wrapper .card .button .arrow-wrapper .arrow {
   width: 20px;
   height: 20px;
   border: solid rgb(255, 255, 255);
   border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 3px;
   transform: rotate(-45deg) translateX(0);
-  position: relative;
-  stroke-linecap: round;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease-out;
+}
+.complectations .complectations-wrapper .card .button .arrow-wrapper :nth-child(2) {
+  margin-left: -6px;
+  transition-delay: 0.1s;
+}
+.complectations .complectations-wrapper .card .button .arrow-wrapper :nth-child(3) {
+  margin-left: -6.5px;
+  transition-delay: 0.2s;
+}
+.complectations .complectations-wrapper .card .button:hover {
+  width: 380px;
 }
 .complectations .complectations-wrapper .card .button:hover .arrow {
   transform: rotate(-45deg) translate(7px, 7px);
@@ -492,6 +504,9 @@ h2 {
   }
   .complectations .complectations-wrapper .card .information .line {
     height: 6px;
+  }
+  .complectations .complectations-wrapper .card .button:first-child {
+    margin-bottom: 60px;
   }
   .warranty {
     margin-top: 160px;
