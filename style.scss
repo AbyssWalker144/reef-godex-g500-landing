@@ -366,7 +366,7 @@ h2 {
                 transition: width 0.3s ease-out;
                 // background-size: 200% 200%;
 
-                .arrow-wrapper{
+                .arrow-wrapper {
                     display: flex;
                     position: relative;
 
@@ -381,23 +381,25 @@ h2 {
                         // stroke-linecap: round;
                         transition: transform 0.3s ease-out;
                     }
-                    :nth-child(2){
+
+                    :nth-child(2) {
                         margin-left: -6px;
                         transition-delay: 0.1s;
-                        
+
                     }
-                    :nth-child(3){
+
+                    :nth-child(3) {
                         margin-left: -6.5px;
                         transition-delay: 0.2s;
                     }
                 }
 
-                &:hover{                    
-                    width: 380px; 
+                &:hover {
+                    width: 380px;
 
                 }
 
-                &:hover .arrow{
+                &:hover .arrow {
                     transform: rotate(-45deg) translate(7px, 7px);
                 }
             }
@@ -410,6 +412,14 @@ h2 {
     margin-top: 100px;
     display: flex;
     gap: 70px;
+
+    .icon-repair{
+        
+
+        img{
+            width: 360px;
+        }
+    }
 
     .warranty-description-wrapper {
         width: 100%;
@@ -658,9 +668,9 @@ h2 {
                     }
                 }
 
-                .button{
-                    
-                    &:first-child{
+                .button {
+
+                    &:first-child {
                         margin-bottom: 60px;
                     }
                 }
@@ -672,20 +682,21 @@ h2 {
         margin-top: 160px;
         gap: 20px;
         position: relative;
-        border: 1px solid red;
+        // border: 1px solid red;
         height: 260px;
         overflow-x: clip;
 
         .icon-repair {
+            flex: 0 2 140px;
 
             img {
                 margin-top: 24px;
-                width: 140px;
             }
         }
 
         .warranty-description-wrapper {
-
+            flex: 2 0 218px;
+            // border: 1px solid green;
 
             h2 {
                 position: absolute;
@@ -697,20 +708,21 @@ h2 {
             }
 
             .text {
-                width: 218px;
+                // width: 218px;
                 font-size: 18px;
+
 
                 span {
                     color: $font-red;
-
                 }
 
                 p:last-child {
                     position: absolute;
                     // transform: translateX(-50%);
-                    left: 12%;
+                    left: 0;
                     width: 100%;
                     bottom: 0;
+                    text-align: center;
                 }
             }
         }

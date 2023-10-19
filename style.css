@@ -319,6 +319,9 @@ h2 {
   display: flex;
   gap: 70px;
 }
+.warranty .icon-repair img {
+  width: 360px;
+}
 .warranty .warranty-description-wrapper {
   width: 100%;
 }
@@ -512,13 +515,17 @@ h2 {
     margin-top: 160px;
     gap: 20px;
     position: relative;
-    border: 1px solid red;
     height: 260px;
     overflow-x: clip;
   }
+  .warranty .icon-repair {
+    flex: 0 2 140px;
+  }
   .warranty .icon-repair img {
     margin-top: 24px;
-    width: 140px;
+  }
+  .warranty .warranty-description-wrapper {
+    flex: 2 0 218px;
   }
   .warranty .warranty-description-wrapper h2 {
     position: absolute;
@@ -529,7 +536,6 @@ h2 {
     margin-bottom: 0;
   }
   .warranty .warranty-description-wrapper .text {
-    width: 218px;
     font-size: 18px;
   }
   .warranty .warranty-description-wrapper .text span {
@@ -537,9 +543,10 @@ h2 {
   }
   .warranty .warranty-description-wrapper .text p:last-child {
     position: absolute;
-    left: 12%;
+    left: 0;
     width: 100%;
     bottom: 0;
+    text-align: center;
   }
   .parts {
     margin-top: 60px;
