@@ -71,8 +71,8 @@ h2 {
   position: absolute;
   transform: translateX(-50%);
   left: 50%;
-  bottom: -110px;
-  width: 120%;
+  bottom: 0;
+  width: 100%;
 }
 .banner .main-img-wrapper .blur-sircuit {
   position: absolute;
@@ -218,6 +218,9 @@ h2 {
 .complectations .complectations-wrapper .card .information.last {
   border-radius: 8px 0px 8px 8px;
 }
+.complectations .complectations-wrapper .card .information:not(.last) .icons-wrapper .icon:nth-child(2) {
+  margin-left: 50px;
+}
 .complectations .complectations-wrapper .card .information .icons-wrapper {
   margin-top: 60px;
   display: flex;
@@ -232,6 +235,7 @@ h2 {
   margin-top: 30px;
   font-size: 24px;
   font-weight: 600;
+  text-align: center;
 }
 .complectations .complectations-wrapper .card .information .options {
   margin-top: 40px;
@@ -286,6 +290,7 @@ h2 {
   cursor: pointer;
   gap: 30px;
   transition: width 0.3s ease-out;
+  text-decoration: none;
 }
 .complectations .complectations-wrapper .card .button .arrow-wrapper {
   display: flex;
@@ -357,6 +362,7 @@ h2 {
   border: 1px solid #DDD;
   box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.1);
   height: 374px;
+  gap: 20px;
 }
 .parts .parts-wrapper .part p {
   font-size: 32px;
@@ -381,6 +387,7 @@ h2 {
   }
   h2 {
     font-size: 40px;
+    line-height: 52px;
   }
   .banner {
     width: 100%;
@@ -405,7 +412,7 @@ h2 {
   .banner .main-text-wrapper .main-text {
     font-size: 8vw;
     text-align: center;
-    margin-top: 250px;
+    margin-top: 50vw;
   }
   .banner .main-img-wrapper {
     position: absolute;
@@ -425,8 +432,7 @@ h2 {
     right: -5px;
   }
   .banner .main-img-wrapper img {
-    width: 100%;
-    max-width: 500px;
+    max-width: 260px;
   }
   .advantages {
     flex-direction: column;
@@ -483,6 +489,12 @@ h2 {
   .complectations .complectations-wrapper .card .information.last {
     border-radius: 0px 8px 8px 8px;
   }
+  .complectations .complectations-wrapper .card .information.last .icon:nth-child(2) {
+    margin-left: 10px !important;
+  }
+  .complectations .complectations-wrapper .card .information:not(.last) .icons-wrapper .icon:nth-child(2) {
+    margin-left: 30px;
+  }
   .complectations .complectations-wrapper .card .information .icons-wrapper {
     margin-top: 40px;
   }
@@ -492,9 +504,6 @@ h2 {
   .complectations .complectations-wrapper .card .information .icons-wrapper .icon .icon-text {
     margin-top: 20px;
     font-size: 16px;
-  }
-  .complectations .complectations-wrapper .card .information .icons-wrapper .icon:nth-child(2) {
-    margin-left: 30px;
   }
   .complectations .complectations-wrapper .card .information .options {
     height: 108px;
@@ -561,7 +570,9 @@ h2 {
     gap: 30px;
   }
   .parts .parts-wrapper .part {
-    height: 270px;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding-bottom: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -572,6 +583,7 @@ h2 {
   }
   .parts .parts-wrapper .part p {
     font-size: 20px;
+    line-height: 28px;
   }
   .parts .parts-wrapper .part .line {
     height: 6px;
