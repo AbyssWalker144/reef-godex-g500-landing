@@ -211,12 +211,17 @@ h2 {
   border-radius: 0px 8px 8px 8px;
   border: 1px solid #DDD;
   box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.1);
-  height: 455px;
+  height: -moz-fit-content;
+  height: fit-content;
   width: 100%;
   position: relative;
+  padding-bottom: 50px;
 }
 .complectations .complectations-wrapper .card .information.last {
   border-radius: 8px 0px 8px 8px;
+}
+.complectations .complectations-wrapper .card .information:not(.last) .icons-wrapper {
+  margin-bottom: 75px;
 }
 .complectations .complectations-wrapper .card .information:not(.last) .icons-wrapper .icon:nth-child(2) {
   margin-left: 50px;
@@ -484,13 +489,17 @@ h2 {
     border-radius: 8px 8px 8px 0px;
   }
   .complectations .complectations-wrapper .card .information {
-    height: 340px;
+    height: f;
+    padding-bottom: 30px;
   }
   .complectations .complectations-wrapper .card .information.last {
     border-radius: 0px 8px 8px 8px;
   }
   .complectations .complectations-wrapper .card .information.last .icon:nth-child(2) {
     margin-left: 10px !important;
+  }
+  .complectations .complectations-wrapper .card .information:not(.last) .icons-wrapper {
+    margin-bottom: 0;
   }
   .complectations .complectations-wrapper .card .information:not(.last) .icons-wrapper .icon:nth-child(2) {
     margin-left: 30px;

@@ -275,18 +275,18 @@ h2 {
                 border-radius: 0px 8px 8px 8px;
                 border: 1px solid #DDD;
                 box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.10);
-                height: 455px;
+                height:fit-content;
                 width: 100%;
                 position: relative;
+                padding-bottom: 50px;
 
                 &.last {
                     border-radius: 8px 0px 8px 8px;
-
-                    
                 }
 
                 &:not(.last){
                     .icons-wrapper{
+                        margin-bottom: 75px;
 
                         .icon:nth-child(2){
                             margin-left: 50px;
@@ -637,7 +637,8 @@ h2 {
 
                 .information {
 
-                    height: 340px;
+                    height: f;
+                    padding-bottom: 30px;
 
                     &.last {
                         border-radius: 0px 8px 8px 8px;
@@ -649,6 +650,7 @@ h2 {
 
                     &:not(.last){
                         .icons-wrapper{
+                            margin-bottom: 0;
     
                             .icon:nth-child(2){
                                 margin-left: 30px;
