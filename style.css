@@ -368,6 +368,12 @@ h2 {
   box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.1);
   height: 374px;
   gap: 20px;
+  text-decoration: none;
+  color: #3B3A40;
+  transition: box-shadow 0.3s;
+}
+.parts .parts-wrapper .part:hover {
+  box-shadow: 0px 0px 16px 0px rgba(89, 0, 255, 0.308);
 }
 .parts .parts-wrapper .part p {
   font-size: 32px;
@@ -489,7 +495,8 @@ h2 {
     border-radius: 8px 8px 8px 0px;
   }
   .complectations .complectations-wrapper .card .information {
-    height: f;
+    height: -moz-fit-content;
+    height: fit-content;
     padding-bottom: 30px;
   }
   .complectations .complectations-wrapper .card .information.last {
